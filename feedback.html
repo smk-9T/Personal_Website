@@ -64,11 +64,64 @@
     </form>
   </div>
   <script>
-    document.querySelector(".feeedback-form").addEventListener("submit", function(e) {
-      e.preventDefault(); 
-      alert("Thanks for your feedback! 😊");
-      this.reset(); 
-    });
+
+    // validation.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("feedbackForm");
+  const nameInput = form.querySelector('input[type="name"]');
+  const emailInput = form.querySelector('input[type="email"]');
+  const feedbackInput = form.querySelector('textarea');
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const feedback = feedbackInput.value.trim();
+
+    if (name === "") {
+      alert("Please enter your name.");
+      nameInput.focus();
+      return;
+    }
+
+    if (email === "") {
+      alert("Please enter your email.");
+      emailInput.focus();
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      emailInput.focus();
+      return;
+    }
+
+    if (feedback === "") {
+      alert("Please enter your feedback.");
+      feedbackInput.focus();
+      return;
+    }
+
+    alert("Thanks for your feedback! 😊");
+    form.reset();
+  });
+
+  function validateEmail(email) {
+    // Simple email pattern
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+});
+
+// document.querySelector(".feeedback-form").addEventListener("submit", function(e) {
+//   e.preventDefault(); 
+//   alert("Thanks for your feedback! 😊");
+//   this.reset(); 
+// });
+
+
   </script>
   
   <script src="dark-mode.js"></script>
