@@ -1,0 +1,50 @@
+/* .main{
+     border: 1px solid red; 
+
+} */
+.fam-card{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top:50px ;
+    /* border: 1px solid green; */
+    
+    border-radius: 10px;
+    
+}
+
+span{
+  color: #F05131;
+}
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.left img{
+   
+    border-radius:10px ;
+    width: 400px;
+    height: 540px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.right{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.032), 0 6px 6px 0 rgba(0, 0, 0, 0.077);
+    background-color: var(--clr-mdark);
+    padding: 20px;
+    border-radius: 10px;
+    width: 526px;
+    color: var(--clr-light);
+}
+.right h3{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-top: 76px;
+    margin-bottom: 66px;
+    font-size: 40px;
+    border-bottom:3px solid  #F05131; 
+}
+.right p{
+    padding-left: 6px;
+    line-height: 1.7;
+}

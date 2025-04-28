@@ -1,0 +1,75 @@
+/* Feedback Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    background: #fdfdfd;
+  }
+
+  .feedback-box input:-webkit-autofill,
+  .feedback-box input:-webkit-autofill:hover, 
+  .feedback-box input:-webkit-autofill:focus,
+  .feedback-box textarea:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px var(--clr-ldark) inset !important;
+    -webkit-text-fill-color: var(--clr-light) !important;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+  
+
+.feedback-box{
+  margin: 50px auto !important;
+  }
+
+.feedback-box h1{
+  margin-bottom: 20px;
+  color: var(--clr-light);
+}  
+span{
+  color: #F05131;
+}
+
+
+.feeedback-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 1050px;
+    color: var(--clr-light) !important;
+}
+
+.feedback-box input,
+.feedback-box textarea {
+  background-color: var(--clr-ldark);
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.032), 0 6px 6px rgba(0, 0, 0, 0.077);
+  color: var(--clr-light);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.feedback {
+  height: 200px;
+  resize: none;
+  text-align: left;
+}
+
+.submit-btn {
+  align-self: flex-end; 
+  background-color: var(--clr-orange);
+  color: white;
+  width: 160px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-box .submit-btn:hover {
+  background-color: #ee3c19;
+}
+

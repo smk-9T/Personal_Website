@@ -1,0 +1,74 @@
+.main{
+    margin-top: 50px !important;
+    padding: 20px;
+    color: var(--clr-light);
+}
+/* ----------------------------------------------------------------------------------------------------------------- */
+.heading h1{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--clr-light);
+    margin-bottom: 20px;
+   
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+.img-boxes{
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    /* border: 1px solid white; */
+}
+img{
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+
+}
+img:hover{
+  transform: scale(1.1);  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+#img-1{
+    width: 916px;
+    height: 500px;
+}
+#img-2{
+    width: 450px;
+    height: 500px;
+
+}
+#img-3{
+    width: 450px;
+    height: 500px;
+    
+}
+.img-box-1
+{
+    position: relative;
+    
+}
+.link{
+    background-image: url(imgs/img-1.jpeg); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+}
+.img-box-1 a{
+    background-image: url(imgs/img-1.jpeg); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+    position: absolute;
+    bottom: 10px;
+    left: 6px;
+    color: var(--clr-light);
+    display: block;
+    width: 10px auto;
+  
+}
+
